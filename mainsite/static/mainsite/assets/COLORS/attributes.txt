@@ -1,0 +1,41 @@
+Reds:
+light-red1: #D17173
+light-red2: #A15755 (darker, paler)
+red: #81272E
+
+Pink:
+pale-pink1: #F9D0CF (a very pale rose)
+
+Blues:
+pale-teal1: #8DA8A1 (bluer, lighter, more-pale)
+baby-blue: #C3EEE7
+light-navy: #80909A
+navy1: #4a6f8e
+dark-navy: #284766
+medium-grey-blue: #548393 (though not quite navy)
+dark-blue: #294163
+
+Greens:
+pale-green1: #BBCDB5
+pale-green2: #C5D8D5
+olive: #8E8971
+pale-teal2: #C3EEE7 (greener, darker, less-pale)
+teal1: #66BBAE (greener, darker, even-less-pale)
+
+Browns:
+desert-storm1: #C6C386 (a light-brownish color)
+chocolate1: #5B391E (milk-chocolate)
+hot-fudge1: #351D1B
+tan1: #DFB591
+
+Greys:
+grey1: #B2B2B2
+taupe1: #E2D7DC (pale-purple-grey)
+taupe2: #E3E6E6 (lighter)
+light-pinkish-grey: #EDE0D9
+brownish-grey1: #C5BEB1
+light-grey1: #DFDBD8
+
+other:
+pink-red-tan1: #EEDFD7
+Original Logo Blue (rgb): (55,79,206)

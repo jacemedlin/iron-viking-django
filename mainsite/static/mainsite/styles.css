@@ -1,0 +1,207 @@
+body, img, div, header, main{
+	margin: 0;
+}
+
+.pad-mar-remove{
+	padding: 0!important;
+	margin: 0;
+}
+
+body{
+	font-family: lato, sans-serif!important;
+}
+
+p{
+	font-size: 18px;
+}
+
+.bg-primary{
+	background-color: #81272E!important;
+}
+.bg-secondary{
+	background-color: #294163!important;
+}
+.bg-dark{
+}
+.bg-light{
+	background-color: #C5D8D5!important;
+}
+
+.bg-grey{
+	background-color: #56595e;
+}
+
+.text-primary{
+	color:  rgb(55,79,206)!important;
+}
+.text-secondary{
+	color: #E3E6E6!important;
+}
+.text-light{
+}
+.text-muted{
+	color: #C3EEE7!important;
+}
+
+.text-shadow{
+	text-shadow: 0 0 6px black;
+}
+
+.logo-text-container, h1, h2, h3, h4{
+	font-family: 'Alfa Slab One', cursive!important;
+}
+
+header{
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	box-shadow: 0px 2px 6px black;
+}
+
+.logo-text-container{
+	display: none;
+}
+
+.logo{
+	width: 75px;
+	margin: -15px 0;
+	vertical-align: middle;
+}
+
+.nav-cont{
+	width: 100%!important;
+}
+
+#nav-logo-text{
+	display: none;
+}
+
+.carousel-inner{
+	height: 65vh;
+	background-color: black;
+}
+.carousel-item{
+    height: 100%;
+	justify-content: center;
+}
+.carousel-img{
+	height: 100%;
+	margin: auto;
+}
+
+#first-section{
+	margin: 30px 0;
+}
+
+.card, .card-img-top{
+	border: none!important;
+	border-radius: 0!important;
+}
+
+.berserker-shieldmaiden{
+	max-height: 528px;
+	padding: 0!important;
+}
+.img-cont{
+	overflow: hidden;
+	max-height: 100%;
+}
+
+#bio-img{
+	min-height: 200px;
+	max-height: 400px;
+}
+
+.bs-img{
+	width: 100%;
+}
+
+.card-h{
+	margin: 10px 0;
+}
+
+#fitness-header{
+	font-size: 48px;
+}
+#fitness-col{
+	padding: 0;
+	height: 50vh;
+}
+.trans-bg{
+	background-color: rgba(41,65,99,.5);
+	width: 100%;
+	height: 100%;
+}
+#fitness-img{
+	background: url("assets/fitness1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	padding: 0!important;
+	margin: 0;
+}
+.fitness-btn{
+	padding: 7px 28px!important;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding: 20px 0;
+}
+
+@media (min-width: 576px) {
+	header{
+		position: absolute;
+	}
+	.logo{
+		width: 100px;
+		margin: -10px 0;
+	}
+	.logo-text-container{
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 36px;
+	}
+	#nav-logo-text{
+		display: inline-block;
+		width: 300px;
+	}
+	#fitness-img{
+		background-attachment: fixed;
+	}
+}
+
+@media (min-width: 768px) {
+	#nav-logo-text{
+		width: 455px;
+	}
+	.logo-text-container{
+		font-size: 58px;
+		margin: -12px 0 -15px;
+	}
+}
+
+@media (min-width: 992px) {
+	header{
+	}
+	.navbar-collapse{
+		display: flex!important;
+		justify-content:center!important;
+	}
+	.navbar-brand{
+		padding-top: 10px!important;
+	}
+	.logo{
+		margin: -25px 0;
+	}
+	.logo-text-container{
+		margin: -15px 0;
+	}
+}
