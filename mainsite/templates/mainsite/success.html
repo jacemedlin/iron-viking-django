@@ -1,0 +1,21 @@
+{% extends 'mainsite/foundation.html' %}
+
+{% block content %}
+{% load static %}
+<div class="container">
+	<section class="row d-flex justify-content-center align-content-center" id="success-container">
+		<div class="col-12">
+			<div class="text-center">
+				<h1 class="text-primary">Thank you for subscribing to the IRON VIKING Newsletter!</h1>
+				<p>You will be redirected to the home page in 4 seconds.</p>
+			</div>
+		</div>
+	</section>
+</div>
+
+{% endblock %}
+
+{% block javastuff %}
+<script>var goHomePonyBoy = {% url 'index' %}</script>
+<script src="{% static 'mainsite/successpage.js' %}"></script>
+{% endblock %}

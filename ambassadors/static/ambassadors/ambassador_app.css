@@ -3,9 +3,23 @@
   position: relative;
 }
 
+.cap-head-cont{
+	width: 100%;
+}
+
+.amb-img{
+	max-height: 500px;
+}
+.amb-thumb{
+	height: 150px;
+}
+
 /* Hide the images by default */
 .mySlides {
+  max-height: 400px;
   display: none;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -52,31 +66,30 @@
 }
 
 /* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.img-gal-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
 
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
 
+.amb-app-cont, .img-gal-cont, .column{
+	padding: 0!important;
+	margin: 0;
+}
+
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+@media (min-width: 576px) {
+	.mySlides{
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 768px) {
+	.amb-thumb{
+		height: 250px;
+	}
 }

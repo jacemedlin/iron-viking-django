@@ -2,8 +2,6 @@
 
 {% load static %}
 
-{% block additionalStyles %}<link rel="stylesheet" href="{% static 'ambassadors/ambassador_app.css' %}">{% endblock %}
-
 {% block title %}About the {{mem_category}}{% endblock %}
 
 {% block content %}
@@ -22,5 +20,3 @@
 			{% endif %}
 		  </div>
 {% endblock %}
-
-{% block additionalScripts %}<script src="{% static 'ambassadors/amb_app_script.js' %}" type="text/javascript"></script>{% endblock %}

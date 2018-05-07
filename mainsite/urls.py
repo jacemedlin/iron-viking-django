@@ -19,7 +19,8 @@ from . import views
 
 urlpatterns = [
 		path('', views.index, name='index'),
-		path('about/<str:who>/', views.about, name = 'about')
+		path('about/<str:who>/', views.about, name = 'about'),
+		path('success/',views.success, name = 'success')
 ]
 
 from django.conf import settings

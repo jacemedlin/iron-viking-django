@@ -1,0 +1,41 @@
+<div id="myModal" class="amodal">
+	<form class="bg-light amodal-content text-center" action="/" method="post">
+
+		<div class="amodal-header bg-secondary">
+			<span class="close text-danger mt-3 mr-3">&times;</span>
+			<h1 class="text-light modal-h py-3 px-sm-3">IRON VIKING Newsletter</h1>
+		  </div>
+		  <div class="amodal-body text-dark py-3 px-3 px-sm-5">
+			  <div class="row">
+				  <div class="col-0 col-md-2">
+				  </div>
+				  <div class="col-md-10">
+					  <p class="text-danger text-md-left">
+						  Sign up to receive workout tips and diet recommendations.
+					  </p>
+				  </div>
+			  </div>
+			  {% csrf_token %}
+			  <div class="row form-group">
+				  <div class="col-md-2">
+					  <label for='name-field'>Name:</label>
+				  </div>
+				  <div class="col-md-10">
+					  <input class="form-control" id="name-field" type="text" required name="s_name">
+				  </div>
+			  </div>
+			  <div class="row form-group">
+				  <div class="col-md-2">
+					  <label for="email-field">Email:</label>
+				  </div>
+				  <div class="col-md-10 text-md-left">
+					  <input class="form-control" id="email-field" aria-describedby="emailHelp" type="email" required name="s_email">
+					  <small class=" text-primary" id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="amodal-footer bg-secondary text-light py-3">
+			<button type="submit" class="btn btn-danger">Subscribe</button>
+		  </div>
+	</form>
+</div>

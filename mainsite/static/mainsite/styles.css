@@ -22,6 +22,7 @@ p{
 	background-color: #294163!important;
 }
 .bg-dark{
+	background-color: #14141c!important;
 }
 .bg-light{
 	background-color: #C5D8D5!important;
@@ -42,12 +43,15 @@ p{
 .text-muted{
 	color: #C3EEE7!important;
 }
+.text-danger{
+	color: #b7101e!important;
+}
 
 .text-shadow{
 	text-shadow: 0 0 6px black;
 }
 
-.logo-text-container, h1, h2, h3, h4{
+.logo-text-container, h1, h2, h3, h4, h5, h6{
 	font-family: 'Alfa Slab One', cursive!important;
 }
 
@@ -78,7 +82,6 @@ header{
 
 .carousel-inner{
 	height: 65vh;
-	background-color: black;
 }
 .carousel-item{
     height: 100%;
