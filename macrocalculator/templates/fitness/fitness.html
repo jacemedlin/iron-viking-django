@@ -1,0 +1,40 @@
+{% extends 'mainsite/foundation.html' %}
+
+{% block title %}Iron Viking - Fitness{% endblock %}
+{% load static %}
+
+{% block extra-styles %}<link rel="stylesheet" href='{% static 'fitness/fitstyles.css' %}'>{% endblock %}
+{% block content %}
+	<div class="container text-center">
+		<section class="row">
+			<div class="col-md-7 pad-mar-remove">
+				<div class="img-cont fitness-img-cont">
+					<img class="fitness-img" src='{% static 'fitness/workout1.jpg' %}'
+					alt="Workout tips">
+				</div>
+			</div>
+			<div class="col-md-5 d-flex justify-content-center
+			align-items-center bg-light pad-mar-remove">
+				<div class="py-4">
+					<h2>Workout Help</h2>
+					<a href='{% url 'macrocalculator:workout' %}' class="btn btn-block text-danger btn-outline-dark">Go</a>
+				</div>
+			</div>
+		</section>
+		<section class="row">
+			<div class="col-md-5 d-flex justify-content-center
+			align-items-center bg-secondary pad-mar-remove">
+				<div class="mx-5 py-4">
+					<h2 class="text-light">Macronutrient Calculator</h2>
+					<a href='{% url 'macrocalculator:macrocalculator' %}' class="btn btn-block text-muted btn-outline-danger">Go</a>
+				</div>
+			</div>
+			<div class="col-md-7 pad-mar-remove">
+				<div class="img-cont fitness-img-cont">
+					<img class="fitness-img" src='{% static 'fitness/healthycop1.jpg' %}'
+					alt="Macronutrition">
+				</div>
+			</div>
+		</section>
+	</div>
+{% endblock %}

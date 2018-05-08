@@ -21,7 +21,14 @@
 /* Modal Content/Box */
 .amodal-content {
    border: 1px solid #888;
+   border-radius: 8px;
    width: 80%; /* Could be more or less, depending on screen size */
+}
+.amodal-header{
+	border-radius: 8px 8px 0 0;
+}
+.amodal-footer{
+	border-radius: 0 0 8px 8px;
 }
 
 /* The Close Button */

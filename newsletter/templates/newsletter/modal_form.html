@@ -1,5 +1,8 @@
+
+<!-- This is the Newsletter Signup Form -->
+
 <div id="myModal" class="amodal">
-	<form class="bg-light amodal-content text-center" action="/" method="post">
+	<form class="bg-light amodal-content text-center" action="{% url 'mainsite:success' %}" method="post">
 
 		<div class="amodal-header bg-secondary">
 			<span class="close text-danger mt-3 mr-3">&times;</span>
@@ -30,9 +33,19 @@
 				  </div>
 				  <div class="col-md-10 text-md-left">
 					  <input class="form-control" id="email-field" aria-describedby="emailHelp" type="email" required name="s_email">
-					  <small class=" text-primary" id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					  <small id="emailHelp" class="text-primary form-text">We'll never share your email with anyone else.</small>
 				  </div>
 			  </div>
+			  <div class="form-group row">
+				  <div class="col-md-2"></div>
+				  <div class="col-md-1">
+					  <input id="private-help" class="form-control" type='checkbox' name="wants_help">
+				  </div>
+				  <div class="col-md-9 text-md-left">
+					  <label for="private-help">I would also like private diet and fitness counseling.</label>
+				  </div>
+			  </div>
+			  <input type="checkbox" class="invisible" checked name="wants_newsletter">
 		  </div>
 		  <div class="amodal-footer bg-secondary text-light py-3">
 			<button type="submit" class="btn btn-danger">Subscribe</button>

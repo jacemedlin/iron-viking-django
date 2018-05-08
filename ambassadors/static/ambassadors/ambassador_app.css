@@ -9,6 +9,7 @@
 
 .amb-img{
 	max-height: 500px;
+	object-fit: cover;
 }
 .amb-thumb{
 	height: 150px;
@@ -16,10 +17,11 @@
 
 /* Hide the images by default */
 .mySlides {
-  max-height: 400px;
+  height: 400px;
   display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
+  width: 100%;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -68,8 +70,13 @@
 /* Container for image text */
 
 /* Add a transparency effect for thumnbail images */
-.demo {
+.amb-thumb {
   opacity: 0.6;
+  object-fit: cover;
+  object-position: center;
+}
+.amb-thumb,.gal-img-cont {
+  min-width: 100%;
 }
 
 .amb-app-cont, .img-gal-cont, .column{
@@ -85,11 +92,20 @@
 @media (min-width: 576px) {
 	.mySlides{
 		flex-direction: row;
+		justify-content: flex-start;
+		height: 350px;
+	}
+	.big-img-cont{
+		max-width: 40%;
+	}
+	.caption-container{
+		min-width: 60%;
+		width: 100%;
 	}
 }
 
 @media (min-width: 768px) {
 	.amb-thumb{
-		height: 250px;
+		height: 200px;
 	}
 }

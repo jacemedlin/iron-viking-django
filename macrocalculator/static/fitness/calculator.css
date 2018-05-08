@@ -1,0 +1,44 @@
+/*
+Author: Keith Alpichi
+Author URI: www.keithalpichi.com
+ */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.hwa, .columnize{
+	flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.inactive {
+  background-color: #585858;
+  color: #3e3e3e;
+  transition: all .75s ease;
+  -webkit-transition: all .75s ease;
+  -moz-transition: all .75s ease;
+}
+
+.pa-factor label {
+  display: block;
+}
+
+.cals-macs ul {
+  list-style-type: none;
+}
+/*--------- Media Queries --------*/
+@media (max-width: 767.98px) {
+	.macro-type{
+		flex-direction: column;
+	}
+	#macrotitle{
+		font-size: 32px;
+	}
+}

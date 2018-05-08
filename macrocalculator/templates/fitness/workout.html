@@ -1,0 +1,56 @@
+{% extends 'mainsite/foundation.html' %}
+
+{% block title %}Iron Viking - Fitness{% endblock %}
+{% load static %}
+
+{% block extra-styles %}<link rel="stylesheet" href='{% static 'fitness/workout.css' %}'>{% endblock %}
+{% block content %}
+	<div class="container text-center bg-light">
+		<section class="row bg-secondary text-light">
+			<div class="col-12 pt-4 pb-3">
+				<h1>Working Out</h1>
+			</div>
+		</section>
+		<section class="row">
+			<div class="col-md-5">
+				<div class="simple-cont">
+					<img class="workout-img" src="{% static 'mainsite/assets/Simpleguide.jpg' %}" alt="A simple workout guide">
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div>
+					<h3 class="text-center">It's Serious Business</h3>
+					<p>And everyone needs to do it.</p>
+				</div>
+			</div>
+		</section>
+		<section class="row bg-primary">
+			<div class="col-12 py-4"><h1 class="text-muted">Everybody's Different</h1></div>
+		</section>
+		<section class="row bg-dark">
+			<div class="col-12">
+				<div class="img-cont">
+					<img class="workout-img" src="{% static 'mainsite/assets/Simplebodyguide.jpg' %}"
+					alt="A simple guide to different body types">
+				</div>
+			</div>
+		</section>
+		<section class="row bg-secondary text-light">
+			<div class="col-12 py-4"><h2>Simple Workout Guides</h2></div>
+		</section>
+		<section class="row">
+			<div class="col-6">
+				<div class="img-cont">
+					<img class="workout-img" src="{% static 'mainsite/assets/berserker-workout.jpg' %}"
+					alt="Berserker Workout">
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="img-cont">
+					<img class="workout-img" src="{% static 'mainsite/assets/shieldmaiden-workout.jpg' %}"
+					alt="Shieldmaiden Workout">
+				</div>
+			</div>
+		</section>
+	</div>
+{% endblock %}

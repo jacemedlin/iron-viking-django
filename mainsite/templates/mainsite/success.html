@@ -2,8 +2,8 @@
 
 {% block content %}
 {% load static %}
-<div class="container">
-	<section class="row d-flex justify-content-center align-content-center" id="success-container">
+<div class="container-fluid">
+	<section class="row d-flex justify-content-center align-content-center bg-light" id="success-container">
 		<div class="col-12">
 			<div class="text-center">
 				<h1 class="text-primary">Thank you for subscribing to the IRON VIKING Newsletter!</h1>
@@ -16,6 +16,6 @@
 {% endblock %}
 
 {% block javastuff %}
-<script>var goHomePonyBoy = {% url 'index' %}</script>
+<script>var goHomePonyBoy = {% url 'mainsite:index' %}</script>
 <script src="{% static 'mainsite/successpage.js' %}"></script>
 {% endblock %}

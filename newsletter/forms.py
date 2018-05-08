@@ -11,5 +11,5 @@ from .models import Subscription
 class Subscribe(forms.ModelForm):
 	class Meta:
 		model = Subscription
-		fields = ['s_name','s_email']
+		fields = ['s_name','s_email', 'wants_help', 'wants_newsletter']
 	
